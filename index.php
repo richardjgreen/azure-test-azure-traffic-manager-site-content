@@ -52,10 +52,10 @@
 		<p>Visit the web testing site and enter the URL of this Azure Traffic Manager instance. Set the test from location to a location close to one of your endpoints and repeat the test a second time using a location close to your other endpoint.</p>
 		<p>In the Pingdom FPT results, you will see a preview of the site that was loaded in each location.</p>
 		
-		<h1>This page was loaded from the <?php echo getenv("WEBAPP_LOCATION") ?> instance of the Web App.</h1>
-		
+		<h1>This page was loaded from <?php echo getenv("WEBAPP_LOCATION") ?>.</h1>
+
 		<!-- We can also print the instance name to a HTML comment so that it's hidden in the browser Development Tools for debugging when we need it -->
-		<!-- This page was loaded from the <?php echo getenv("WEBAPP_LOCATION") ?> instance of the Web App. -->
+		<!-- his page was loaded from <?php echo getenv("WEBAPP_LOCATION") ?>. -->
 			
       </div><!-- /.row -->
 
