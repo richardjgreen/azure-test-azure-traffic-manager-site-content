@@ -19,7 +19,7 @@
   </head>
   <body>
   
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-inverse">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -38,7 +38,7 @@
       </div>
     </nav>
 
-    <div class="jumbotron">This page was loaded from the <?php echo getenv("WEBAPP_LOCATION") ?> instance of the Web App.</div>
+    <div class="jumbotron"></div>
 	
 	<div class="container" role="main">
 	
@@ -51,6 +51,8 @@
 		<h2>How to Perform the Test</h2>
 		<p>Visit the web testing site and enter the URL of this Azure Traffic Manager instance. Set the test from location to a location close to one of your endpoints and repeat the test a second time using a location close to your other endpoint.</p>
 		<p>In the Pingdom FPT results, you will see a preview of the site that was loaded in each location.</p>
+		
+		<h1>This page was loaded from the <?php echo getenv("WEBAPP_LOCATION") ?> instance of the Web App.</h1>
 		
 		<!-- We can also print the instance name to a HTML comment so that it's hidden in the browser Development Tools for debugging when we need it -->
 		<!-- This page was loaded from the <?php echo getenv("WEBAPP_LOCATION") ?> instance of the Web App. -->
